@@ -1,0 +1,27 @@
+
+.custom-toast {
+    width: 300px;
+    height: auto;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #8cff9a;
+}
+
+.swal2-icon.swal2-error {
+    border-color: #000000 !important; 
+    color: #000000 !important;
+}
+
+.swal2-icon.swal2-error .swal2-x-mark {
+    color: #000000 !important;
+}
+
+.swal2-icon.swal2-error .swal2-x-mark-line {
+    background-color: #000000 !important; /* Define os braços do "X" como pretos */
+}
+
+.swal2-icon.swal2-error::before, 
+.swal2-icon.swal2-error::after {
+    background-color: #000000 !important; 
+}

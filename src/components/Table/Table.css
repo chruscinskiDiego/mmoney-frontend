@@ -1,0 +1,87 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilização da Tabela */
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .styled-th {
+    background-color: #4e79a7;
+    color: white;
+    text-align: left;
+    padding: 10px 15px;
+    font-weight: 600;
+    border: 1px solid #ddd;
+  }
+  
+  .styled-td {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .styled-tr:hover {
+    background-color: #f0f8ff;
+  }
+  
+  /* Botões */
+  .styled-action-btn {
+    background-color: #ff6b5f;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.3s ease;
+  }
+  
+  .styled-action-btn:hover {
+    transform: scale(1.1);
+    background-color: #ff4d4d;
+  }
+  
+  /* Paginação */
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin: 15px 0;
+  }
+  
+  .pagination-btn {
+    background-color: #4e79a7;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination-btn:hover {
+    background-color: #355c7d;
+  }
+  
+  .pagination-text {
+    font-size: 14px;
+  }
+  
+  .custom-option:hover {
+    background-color: #d1ffd5;
+    color: black;
+  }
+
+  .custom-option {
+    background-color: black;
+  }
+  

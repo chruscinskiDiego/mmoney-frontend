@@ -1,0 +1,54 @@
+.custom-warning-icon {
+    color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+.custom-toast {
+    width: 300px;
+    height: auto;
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #8cff9a;
+}
+
+.swal2-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.swal2-html-container {
+    font-size: 14px;
+    color: #000;
+}
+
+.custom-warning-icon {
+    color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+.swal2-warning {
+    color: #000000 !important;
+}
+
+.swal2-warning .swal2-warning-ring {
+    border-color: #000000 !important;
+}
+
+.swal2-warning .swal2-warning-line-tip,
+.swal2-warning .swal2-warning-line-long {
+    background-color: #000000 !important;
+}
+
+.swal2-icon.swal2-warning {
+    border-color: #000000 !important;
+    color: #000000 !important;
+}
+
+.swal2-icon.swal2-warning::before, 
+.swal2-icon.swal2-warning::after {
+    background-color: #000000 !important;
+}
