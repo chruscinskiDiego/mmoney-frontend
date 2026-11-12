@@ -1,50 +1,46 @@
-# React + TypeScript + Vite
+# MMoney — interface de finanças pessoais
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interface web para organização de finanças pessoais, integrada à API MMoney.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Telas de login e cadastro.
+- Gerenciamento de bancos, contas, categorias e despesas.
+- Gráficos de despesas e visão por categorias.
+- Rotas protegidas e envio de token nas chamadas à API.
 
-## Expanding the ESLint configuration
+## Tecnologias
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+React, TypeScript e Vite. As bibliotecas e versões estão em [package.json](package.json).
 
-- Configure the top-level `parserOptions` property like this:
+## Executar localmente
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Requer Node.js e npm.
+
+```bash
+git clone https://github.com/chruscinskiDiego/mmoney-frontend.git
+cd mmoney-frontend
+npm ci
+# Configure o arquivo .env antes de iniciar
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Configuração
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Defina VITE_SERVER_ADDRESS no arquivo .env com a URL do backend. Confira também as opções de HTTPS e a origem permitida pelo CORS do servidor.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Comandos
+
+- `npm run dev`: servidor de desenvolvimento.
+- `npm run build`: verificação TypeScript e build.
+- `npm run preview`: prévia do build.
+- `npm run lint`: análise estática.
+
+## Integração
+
+Backend: [mmoney-backend](https://github.com/chruscinskiDiego/mmoney-backend).
+
+## Escopo
+
+Projeto pessoal com dependência do backend para autenticação e dados. O ambiente local usa configurações específicas de HTTPS que devem ser alinhadas entre cliente e servidor.
+
