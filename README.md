@@ -1,46 +1,45 @@
-# MMoney — interface de finanças pessoais
+# MMoney — personal finance interface
 
-Interface web para organização de finanças pessoais, integrada à API MMoney.
+Web interface for organizing personal finances, integrated with the MMoney API.
 
-## Funcionalidades
+## Features
 
-- Telas de login e cadastro.
-- Gerenciamento de bancos, contas, categorias e despesas.
-- Gráficos de despesas e visão por categorias.
-- Rotas protegidas e envio de token nas chamadas à API.
+- Login and registration screens.
+- Bank, account, category and expense management.
+- Expense charts and category views.
+- Protected routes and token-based API requests.
 
-## Tecnologias
+## Technologies
 
-React, TypeScript e Vite. As bibliotecas e versões estão em [package.json](package.json).
+React, TypeScript and Vite. Libraries and versions are listed in [package.json](package.json).
 
-## Executar localmente
+## Run locally
 
-Requer Node.js e npm.
+Requires Node.js and npm.
 
 ```bash
 git clone https://github.com/chruscinskiDiego/mmoney-frontend.git
 cd mmoney-frontend
 npm ci
-# Configure o arquivo .env antes de iniciar
+# Configure .env before starting.
 npm run dev
 ```
 
-### Configuração
+### Configuration
 
-Defina VITE_SERVER_ADDRESS no arquivo .env com a URL do backend. Confira também as opções de HTTPS e a origem permitida pelo CORS do servidor.
+Set VITE_SERVER_ADDRESS in .env to the backend URL. Check the server's HTTPS settings and allowed CORS origin as well.
 
-## Comandos
+## Commands
 
-- `npm run dev`: servidor de desenvolvimento.
-- `npm run build`: verificação TypeScript e build.
-- `npm run preview`: prévia do build.
-- `npm run lint`: análise estática.
+- `npm run dev`: development server.
+- `npm run build`: TypeScript checks and build.
+- `npm run preview`: preview the build.
+- `npm run lint`: static analysis.
 
-## Integração
+## Integration
 
 Backend: [mmoney-backend](https://github.com/chruscinskiDiego/mmoney-backend).
 
-## Escopo
+## Scope
 
-Projeto pessoal com dependência do backend para autenticação e dados. O ambiente local usa configurações específicas de HTTPS que devem ser alinhadas entre cliente e servidor.
-
+Personal project that depends on the backend for authentication and data. The local environment uses specific HTTPS settings that must be aligned between client and server.
